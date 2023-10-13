@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style login.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img src="./img/Graduation Cap.svg" alt="">
+            </div>
+            <h2>login</h2>
+            <form action="#" class="form" id="form">
+                <div>
+                    <label for="user">User Name</label>
+                    <input type="text" id="user" required>
+                </div>
+                <div>
+                    <label for="pass">Password</label>
+                    <input type="password"  id="pass" required>
+                </div>
+                <div class="under">
+                    <span class="rem">
+                        <input id="check" type="checkbox">
+                        <label class="rem" for="check">Remmember Me</label>
+                    </span>
+                </div>
+                <button class="reg" type="submit" id="sub">LOGIN</button>
+            </form>
+        </div>
+        <div class="right">
+            <img src="./img/images.jpg" alt="students">
+        </div>
+    </div>
+    <div class="alert alert-success" role="alert" id="alert">
+        This is a success alert—check it out!
+      </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

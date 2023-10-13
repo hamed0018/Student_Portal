@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.container {
+  border-radius: 15.633px;
+  background: #fff;
+  box-shadow: 7.81641px 7.81641px 31.26563px 15.63281px rgba(0, 0, 0, 0.12);
+  width: 90%;
+  height: 500px;
+  flex-shrink: 0;
+  display: flex;
+}
+.left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 15px;
+  gap: 10px;
+}
+.right {
+  width: 40%;
+  height: 100%;
+  border-radius: 15.633px;
+  background: linear-gradient(
+    0deg,
+    #925fe2 80.26%,
+    rgba(146, 95, 226, 0) 143.39%,
+    #e2d4f7 143.39%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right img {
+  max-width: 80%;
+  height: 35%;
+  border-radius: 15.633px;
+}
+.container .left .logo {
+  width: 83.375px;
+  height: 83.375px;
+  border-radius: 20.844px;
+  background: linear-gradient(180deg, #925fe2 0%, #7042c0 100%);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.left h2 {
+  text-shadow: 2px 2px rgb(161, 161, 161);
+}
+.left form div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.left form div input {
+  padding: 10px;
+  outline: none;
+  background: linear-gradient(180deg, #925fe2 0%, #7042c0 100%);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+}
+.left form div input:hover {
+  border: none;
+  border-bottom: 2px solid #925fe2;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 70px;
+}
+.under {
+  display: flex;
+  flex-direction: row;
+}
+.rem {
+  font-size: smaller;
+}
+.reg {
+  margin-bottom: 40px;
+  width: 120px;
+  background: linear-gradient(180deg, #925fe2 0%, #7042c0 100%);
+  border-radius: 15px;
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: #fff;
+}
+.isValid{
+  border: 0.5px solid red;
+}
+.alert{
+  position: absolute;
+  left: 100%;
+  transition: all 0.5s ease-in;
+}
+.show{
+  left: calc(100% - 30%);
+}
